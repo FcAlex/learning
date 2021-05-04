@@ -1,7 +1,7 @@
 // Componentes com primeira letra maiuscula
 import React from 'react'
 
-function Primeiro() {
+export default  function Primeiro() {
     const msg = 'Bem Vindo!!'
     return (
         <div>
@@ -11,5 +11,3 @@ function Primeiro() {
         </div>
     )
 }
-
-export default Primeiro
