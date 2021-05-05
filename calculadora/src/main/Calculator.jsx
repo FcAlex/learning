@@ -49,12 +49,12 @@ export default class Calculator extends Component {
         return (
             <div className="calculator">
                 <Display value={this.state.displayValue} />
-                <Button label="AC" click={() => this.clearMemory} triple/>
+                <Button label="AC" click={() => this.clearMemory()} triple/>
                 <Button label="/" click={setOperation} operation/>
                 <Button label="7" click={addDigit}/>
                 <Button label="8" click={addDigit}/>
                 <Button label="9" click={addDigit}/>
-                <Button label="*" click={setOperation} operation/>
+                <Button label="x" click={setOperation} operation/>
                 <Button label="4" click={addDigit}/>
                 <Button label="5" click={addDigit}/>
                 <Button label="6" click={addDigit}/>

@@ -2,7 +2,7 @@ import './Button.css'
 
 export default props => 
     <button 
-        onClick={e => props.click && props.click(e.target.label)}
+        onClick={e => props.click && props.click(props.label)}
         className={`
             button 
             ${props.operation ? 'operation' : ''} 
