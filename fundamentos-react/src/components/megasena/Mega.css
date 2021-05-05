@@ -1,0 +1,15 @@
+.Mega {
+    margin: 10px;
+}
+
+.Mega input {
+    width: 60px;
+    outline: none;
+    border: 1px solid #999;
+    padding: 6px;
+}
+
+.Mega button {
+    padding: 5px;
+    margin: 0 10px;
+}
