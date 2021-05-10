@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 20px;
+      height: calc(100% - 40px);
+      background-color: lightgray;
+      box-sizing: border-box;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      border: solid 5px dodgerblue;
+      background-color: #fff;
+    }
+
+    body {
+      display: grid;
+      grid-template-columns: [inicio] 1fr [metade-1 meio-1] 1fr [metade-2 meio-2] 1fr [fim];
+      /* podemos nomear as linhas do grid utilizando colchetes [] */
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    .d1 {
+      grid-column-start: metade-2;
+      grid-column-end: fim;
+      grid-column: meio-1 / fim;
+      /* Para utilizar o end e start usamos esse comando e dividimos com o */
+      grid-row: 1 / span 2;
+      grid-area: 1 / meio-1 / span 3 / fim;
+      /* representa a definição da linha e coluna ordem: row-start column-start row-end column-end */
+
+      /* definir espaçamento */
+      column-gap: 50px;
+      row-gap: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+</body>
+
+</html>

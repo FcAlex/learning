@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    header {
+      grid-area: cabecalho;
+      border: solid 1px #000;
+    }
+
+    nav {
+      grid-area: navegacao;
+      border: solid 1px #000;
+    }
+
+    main {
+      grid-area: conteudo;
+      border: solid 1px #000;
+    }
+
+    footer {
+      grid-area: rodape;
+      border: solid 1px #000;
+    }
+
+    body {
+      display: grid;
+      min-height: 100vh;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: 100px 1fr 100px;
+      grid-template-areas: 'cabecalho cabecalho''navegacao conteudo''rodape rodape';
+    }
+  </style>
+</head>
+
+<body>
+  <main>CONTEÚDO</main>
+  <header>CABEÇALHO</header>
+  <footer>RODAPÉ</footer>
+  <nav>NAVEGAÇÃO</nav>
+</body>
+
+</html>
