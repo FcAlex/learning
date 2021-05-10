@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: solid 1px #000;
+            font-size: 40px;
+        }
+
+        .flex-container div {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 300px;
+            width: 600px;
+        }
+
+        .flex-container div:nth-child(3) {
+            background-color: blue;
+            order: -1; /* define a ordem [default: order: 0] */
+            align-self: center;
+        }
+
+        .flex-container div {
+            width: 100px;
+            flex-grow: 1; /* flex-grow: define a logica de organização do espaço total do flex-container, definindo pesos para que os itens se divida o espaço. a lógica seria dividir os espaços entre os itens [default: 0]*/
+            /* em outras palavras, o flex container divide o espaço entre os seus itens e multiplica o pedaço do container pelo valor do grow */
+            flex-shrink: 1; /* a mesma ideia do grow, porém representa a forma de reduzir */
+        }
+
+        .flex-container div:nth-child(1) {
+            flex-shrink: 5;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

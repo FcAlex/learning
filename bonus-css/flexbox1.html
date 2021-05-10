@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: solid 5px #000;
+            font-size: 40px;
+            margin: 5px;
+        }
+
+        .big {
+            font-size: 1.5em;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row; /* (define a direção) */
+            width: 50%;
+            flex-wrap: wrap; /* (define a possibilidade de overflow) */
+            flex-flow: row wrap; /* flex-flow :<flex-direction> <flex wrap> */
+            
+            /* Main axis */
+            justify-content: flex-start; /* alinha os elementos */
+
+            /* Cross Axis */
+            align-items: stretch; /* alinha os elementos (o tipo baseline alinha pela linha de base das fontes)*/
+
+            /* mais de uma linha/coluna [depende do main axis] (todas as linhas respeitam essa caracteristica) */
+            align-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div class="big">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>
