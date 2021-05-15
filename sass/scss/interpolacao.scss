@@ -1,0 +1,13 @@
+
+$name: destaque;
+$attr: border;
+
+p.#{$name} {
+    #{$attr}-color: blue;
+}
+
+p {
+    $font: 14pt;
+    $line-height: 30px;
+    font: #{$font}/#{$line-height};
+}

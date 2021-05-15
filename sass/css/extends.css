@@ -1,0 +1,17 @@
+.msg, .msg-error, .msg-alert {
+  border: 1px solid;
+  padding: 4px;
+  text-align: center; }
+
+.msg-error {
+  border-color: red; }
+
+.msg-alert {
+  border-color: blue; }
+
+a:hover, .hover-link {
+  text-decoration: underline;
+  color: blueviolet; }
+
+.hover-link {
+  color: blue; }

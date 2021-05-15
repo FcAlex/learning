@@ -1,0 +1,25 @@
+.msg {
+    border: 1px solid;
+    padding: 4px;
+    text-align: center;
+}
+
+.msg-error {
+    @extend .msg;
+    border-color: red;
+}
+
+.msg-alert {
+    @extend .msg;
+    border-color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.hover-link {
+    @extend a:hover;
+    color: blue;
+}

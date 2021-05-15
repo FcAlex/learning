@@ -1,0 +1,51 @@
+
+// number operations
+
+// soma e multiplicacao
+h1 {
+    // font-size: 1em + 2px; // unidades incompativeis
+    font-size: 5px + 2;
+    // font-size: 5px * 2px; // unidades inválida
+}
+
+h2 {
+    font-size: 2px * 2;
+}
+
+//subtração e negação de numéros
+h1 {
+    font-size: 5px - 2;
+}
+
+//divisao
+div {
+    $width: 1000px;
+    width: $width/2;
+    width: round(1.5)/2;
+    height: (500px/2);
+    margin: 5px + 2px/2px;
+}
+
+//modulo
+a {
+    font-size: 50 % 3;
+}
+
+//color operation (depreciado: não use) 
+//[Consider using Sass's color functions instead.] 
+//http://sass-lang.com/documentation/Sass/Script/Functions.html#other_color_functions
+//Todas as operações aritméticas são suportadas para valores de cor, onde trabalham por partes
+//Por exemplo: color: #010203 + #040506;
+//01+04 = 05, 02+05 = 07, 03+06 = 09 ==> color: #050709;
+p {
+    color: #010203 + #0405ff
+}
+
+//string operation
+p {
+    cursor: e + -resize;
+}
+
+p:before {
+    content: "eu tenho #{2 + 10} moedas";
+}

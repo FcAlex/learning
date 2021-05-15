@@ -1,0 +1,49 @@
+
+$width: 100%;
+$font-size: 1.2rem;
+$color: #000;
+$border-style: 1px solid $color;
+
+nav {
+    width: $width;
+    color: $color;
+    font-size: $font-size;
+    border: $border-style;
+}
+
+// === Tipos === (o ideal é adicionar as variaveis em cima
+
+//numericos 
+$width-rem: 3.5rem;
+$width-px: 300px;
+$width: 100;
+
+//string
+$font: "Lucida Grande";
+$font: 'Fira Code';
+$weight: bold;
+
+//cores
+$red: red;
+$white: #fff;
+$bg-section: rgba(0, 0, 0, 0.7);
+
+//boolean e null
+$color-light: false;
+$color-dark: true;
+$color-dark: null;
+
+//listas
+$animals: puma, sea-plug, egret, salamander;
+$animals: puma sea-plug egret salamander;
+$animals: "puma" "sea-plug" "egret" "salamander";
+
+//maps 
+$social-colors: (
+    facebook: #3b5998,
+    github: #4183c4,
+    instagram: #517fa4,
+    linkedin: #007bb6,
+    twitter: #00aced,
+    youtube: #b00
+);
