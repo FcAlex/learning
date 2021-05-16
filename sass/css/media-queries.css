@@ -1,0 +1,11 @@
+.side-bar {
+  width: 30px; }
+  @media screen and (orientation: landscape) {
+    .side-bar {
+      width: 40%; } }
+
+header {
+  padding: 3em; }
+  @media (min-width: 768px) {
+    header {
+      padding: 2em; } }

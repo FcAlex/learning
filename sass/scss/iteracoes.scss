@@ -1,0 +1,23 @@
+@for $i from 1 through 3 { // 1 até ser igual a 3
+    .item-#{$i} {width: 2em * $i;}
+}
+
+@for $i from 1 to 3 { // enquanto ser menor 3
+    .li-#{$i} {width: 2em * $i;}
+}
+
+@each $animal in puma, leon, egret, salamander {
+    .#{$animal}-icon {
+        background-image: url('/images/#{$animal}.png');
+    }
+}
+
+$i: 3;
+
+@while $i > 0 {
+    .item-#{$i} {
+        width: 2em * $i;
+    }
+
+    $i: $i - 2; 
+}

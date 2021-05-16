@@ -1,0 +1,6 @@
+div, p {
+  display: block;
+  margin: 0 center; }
+
+p {
+  color: red; }

@@ -1,0 +1,38 @@
+.side-bar {
+    width: 30px;
+
+    @media screen and (orientation: landscape) {
+        width: 40%;
+    }
+}
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// diretiva content: é possivel passar conteudo para os mixins (entre chaves)
+
+@mixin landscape {
+    @media screen and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin landscape {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+header {
+    padding: 3em;
+
+    @include tablet {
+        padding: 2em;
+    }
+}

@@ -1,0 +1,18 @@
+// placeholder é criado para reaproveitar blocos estáticos
+// o mixins é criado para reaproveitar blocos dinâmicos
+// o placeholder agrupa os elementos que extende o placeholder, diferentemente do
+// mixins, de forma que utilizando mixins em blocos estáticos, duplicamos código
+
+%center {
+    display: block;
+    margin: 0 center;
+}
+
+div {
+    @extend %center;
+}
+
+p {
+    @extend %center;
+    color: red;
+}

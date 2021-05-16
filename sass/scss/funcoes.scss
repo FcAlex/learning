@@ -1,0 +1,25 @@
+$color: red;
+$amount: 80%;
+
+div {
+    background: ligthen($color, $amount); //clarear a cor de acordo com a porcentagem
+    background: darken($color, $amount); //escurecer a cor de acordo com a porcentagem
+    font-family: quote(Fira Code); // adiciona as aspas na string
+    font-family: unquote("Fira Code"); // remove as aspas da String
+    width: percentage($number: 0.2);
+    margin: round($number: 5.87);
+    padding: ceil($number: 2.25);
+    outline: floor($number: 2.84);
+}
+
+
+// criar funções (deve sempre haver um retorno
+
+@function calc_fluid($target, $container) {
+    $result: ($target / $container) * 100%; 
+    @return $result;
+}
+
+div {
+    width: calc_fluid(400, 1000);
+}

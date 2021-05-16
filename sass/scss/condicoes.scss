@@ -1,0 +1,14 @@
+$template: dark;
+
+header {
+    @if $template == dark {
+        color: #fff;
+        background-color: #222;
+    } @else if $template == light {
+        color: #000;
+        background-color: #fff;
+    } @else {
+        color: lighten($color: #000000, $amount: 20%);
+        background-color: darken($color: fff, $amount: 20%);
+    }
+}

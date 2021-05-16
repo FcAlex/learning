@@ -1,0 +1,15 @@
+// o ideal é modularizar os arquivos scss em módulos, como:
+// partials/
+//        _base.scss
+//        _buttons.scss
+//        _figures.scss
+//        _grids.scss
+//        _typography.scss
+//        _reset.scss
+// styles.scss
+// @import partials/_base.scss
+// @import partials/_buttons.scss
+// ...
+
+// O _ indica ao sass que não é necessário compilar todo hora os arquivos
+// não é necessário adicionar _ na importação

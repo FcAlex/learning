@@ -1,0 +1,12 @@
+div {
+  background: ligthen(red, 80%);
+  background: black;
+  font-family: "Fira Code";
+  font-family: Fira Code;
+  width: 20%;
+  margin: 6;
+  padding: 3;
+  outline: 2; }
+
+div {
+  width: 40%; }

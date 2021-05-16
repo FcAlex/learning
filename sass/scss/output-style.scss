@@ -1,0 +1,6 @@
+// ao rodar o node-sass poderia o estilo de saida, ou seja a forma que o código
+// css é gerado. Definimos isso na chamda do node-sass como parâmetro. Os tipos são::after
+// --output-style nested // padrao, em formatação parecida com o sass
+// --output-style expanded // representa a forma natural de organização
+// --output-style compact // constroi os estilos em uma linha
+// --output-style compressed // todo em uma unica linha

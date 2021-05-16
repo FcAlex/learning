@@ -2,6 +2,8 @@
 $name: destaque;
 $attr: border;
 
+// o simbolo #{ } é dado ao utilizar interpolação
+
 p.#{$name} {
     #{$attr}-color: blue;
 }
