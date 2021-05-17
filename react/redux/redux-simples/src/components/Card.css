@@ -1,0 +1,61 @@
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    text-align: center;
+}
+
+.card .header {
+    display: flex;
+    justify-content: center;
+}
+
+.card .header .title {
+    flex: 1;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.card .content {
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.card.red .header {
+    color: #fff;
+    background-color: #c62828;
+}
+
+.card.red .content {
+    border: 3px solid #c62828;
+}
+
+.card.green .header {
+    color: #fff;
+    background-color: #2e7d32;
+}
+
+.card.green .content {
+    border: 3px solid #2e7d32;
+}
+
+.card.blue .header {
+    color: #fff;
+    background-color: #1565c0;
+}
+
+.card.blue .content {
+    border: 3px solid #1565c0;
+}
+
+.card.purple .header {
+    color: #fff;
+    background-color: #66329A   ;
+}
+
+.card.purple .content {
+    border: 3px solid #66329A   ;
+}
