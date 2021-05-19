@@ -1,18 +1,26 @@
-import Grid from "../components/Grid"
 import IconButton from "../components/IconButton"
 
 const TodoForm = (props) => {
-    return (
-        <div role="form" className="todoForm row">
-            <Grid cols="12 9 10">
-                <input type="text" id="description" className="form-control" placeholder="Adicione uma tarefa" value={props.description} onChange={props.handleChange}/>
-            </Grid>
 
-            <Grid cols="12 3 2">
-                <IconButton styleBtn="primary" icon="plus" onClick={props.handleAdd}/>
-            </Grid>
-        </div>
-    )
+  function keyHandler(e) {
+    if (e.key === "Enter") {
+      e.shiftKey ? props.handleSearch() : props.handleAdd()
+    } else if (e.key === "Escape") {
+      props.handleClear()
+    }
+  }
+
+  return (
+    <div role="form" className="todoForm">
+      <input type="text" id="description" className="search" placeholder="Adicione uma tarefa" value={props.description} onChange={props.handleChange} onKeyUp={keyHandler} />
+
+      <div className="btnTodo">
+        <IconButton styleBtn="primary" icon="plus" onClick={props.handleAdd} />
+        <IconButton styleBtn="info" icon="search" onClick={props.handleSearch} />
+        <IconButton styleBtn="default" icon="close" onClick={props.handleClear} />
+      </div>
+    </div>
+  )
 }
 
 export default TodoForm
