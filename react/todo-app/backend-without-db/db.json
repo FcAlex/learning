@@ -1,16 +1,3 @@
 {
-  "todo": [
-    {
-      "description": "Estudar inglês",
-      "done": false,
-      "createdAt": 1621461518956,
-      "id": 2
-    },
-    {
-      "description": "Acordar cedo",
-      "done": false,
-      "createdAt": 1621461529925,
-      "id": 3
-    }
-  ]
+  "todo": []
 }

@@ -13,19 +13,20 @@ const Todo = (props) => {
   useEffect(reflesh, [])
 
   function reflesh(description = '') {
-    const search = description ? `&description__regex=/${description}/` : ''
-    axios.get(`${URL}?sort=-createdAt${search}`)
+    const search = description !== '' ? `&description_like=${description}` : ''
+
+    if(!search) console.log(`${URL}?_sort=createdAt${search}`)
+
+    axios.get(`${URL}?_sort=createdAt${search}`)
       .then(result => {
         setDescription(description)
         setList(result.data)
       })
   }
 
-  function handleSearch() {
-    reflesh(description)
-  }
-
   function handleAdd() {
+    if(description === '') return
+
     const todo = {
       description,
       done: false,
@@ -61,11 +62,15 @@ const Todo = (props) => {
     reflesh()
   }
 
+  function handleSearch() {
+    reflesh(description)
+  }
+
   return (
     <div>
       <PageHeader name="Tarefas" small="Cadastro" />
-      <TodoForm handleAdd={handleAdd} handleChange={handleChange} description={description} handleClear={handleClear}/>
-      <TodoList list={list} handleRemove={handleRemove} handleMarkAsDone={handleMarkAsDone} handleMarkAsPending={handleMarkAsPending} handleSearch={handleSearch}/>
+      <TodoForm handleAdd={handleAdd} handleChange={handleChange} description={description} handleClear={handleClear} handleSearch={handleSearch}/>
+      <TodoList list={list} handleRemove={handleRemove} handleMarkAsDone={handleMarkAsDone} handleMarkAsPending={handleMarkAsPending} />
     </div>
   )
 }

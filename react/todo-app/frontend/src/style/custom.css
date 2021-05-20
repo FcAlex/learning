@@ -180,3 +180,21 @@ button {
   text-decoration: line-through;
   color: #777;
 }
+
+/* === === SOBRE === === */
+
+.sobre h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.sobre p {
+  text-align: justify;
+  text-indent: 20pt;
+  margin-bottom: 10px;
+}
+
+.sobre p:last-child {
+  margin-bottom: 0;
+}

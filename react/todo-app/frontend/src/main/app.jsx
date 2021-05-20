@@ -1,6 +1,6 @@
 import Menu from "../components/Menu"
 import Routes from "./routes"
-import './../components/custom.css'
+import './../style/custom.css'
 
 const App = (props) => {
 	return (

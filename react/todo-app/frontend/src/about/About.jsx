@@ -2,8 +2,8 @@ import PageHeader from './../components/PageHeader'
 
 const About = props => {
     return (
-        <div>
-            <PageHeader name="Sobre" small="Nós" />
+        <div className="sobre">
+            <PageHeader name="Sobre" small="Informações gerais"/>
 
             <h2>Nossa História</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi temporibus magni minus ex? Sapiente quibusdam suscipit, reiciendis vel harum non numquam tempore, distinctio veniam ipsam modi eveniet sint, quod similique.</p>
