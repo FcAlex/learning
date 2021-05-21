@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  outline: none;
+}
+
+:root {
+  --dark: #2d3436;
+  --white: #ffffff;
+  --light: #ecf0f1; 
+  --bg-default: #27ae60;
+  --gray: #7f8c8d;
+  --silver: #bdc3c7;
+  --silver-shadow: 0 0 0 0.2rem rgba(189, 195, 199, 0.25);
+}
+
+body {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+button { 
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--silver);
+  color: var(--white);
+}
+
+/* === === MENU === === */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  background-color: var(--bg-default);
+  border-radius: 0 0 5px 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar-title {
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.navbar-title:hover {
+  color: var(--light);
+}
+
+.navbar-title i {
+  font-size: 1.4rem;
+}
+
+.navbar-nav {
+  display: flex;
+  
+}
+
+.navbar-nav a {
+  margin: 0 10px;
+  color: var(--white);
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+  color: var(--light);
+}
+
+/* === === HEADER === === */
+
+.page-header {
+  margin: 1.5rem 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--light);
+}
+
+.page-header h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.page-header .small {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+/* === === FORM === === */
+
+.todoForm {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.todoForm .search {
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid var(--silver);
+  border-radius: 5px;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.todoForm .search:focus {
+  box-shadow: var(--silver-shadow);
+}
+
+.todoForm .btnTodo button {
+  margin-left: 0.5rem;
+}
+
+/* === === LIST === === */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td {
+  padding: .75rem;
+  vertical-align: top;
+  border-top: 1px solid var(--light)
+}
+
+
+.table th {
+  padding: .75rem;
+  vertical-align: bottom;
+  border-bottom:2px solid var(--light);
+  text-align: left;
+}
+
+.table td:first-child, .table th:first-child {
+  width: 88%;
+}
+
+.table td:last-child, .table th:last-child {
+  width: auto;
+}
+
+.table button:nth-child(2) {
+  margin-left: 0.5rem;
+}
+
+/* === === ICON === === */
+
+.success {
+  background-color: var(--bg-default);
+}
+
+.warning {
+  background-color: #f39c12;
+}
+
+.danger {
+  background-color: #e74c3c;
+}
+
+.info {
+  background-color: #74b9ff;
+}
+
+.primary {
+  background-color: #3498db;
+}
+
+/* === === CONDITION === === */
+
+.markedAsDone {
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* === === SOBRE === === */
+
+.sobre h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.sobre p {
+  text-align: justify;
+  text-indent: 20pt;
+  margin-bottom: 10px;
+}
+
+.sobre p:last-child {
+  margin-bottom: 0;
+}
