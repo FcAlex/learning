@@ -1,0 +1,27 @@
+footer {
+  background-color: #fff;
+  height: 3rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 10px;
+  box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, .17);
+}
+
+.copyright, .site {
+  font-weight: 500;
+  font-variant-caps: all-small-caps;
+  font-size: 1.2rem;
+}
+
+.site {
+  color: blue;
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.site:hover {
+  text-decoration: underline;
+}

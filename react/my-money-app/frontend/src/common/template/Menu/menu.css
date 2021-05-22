@@ -1,0 +1,43 @@
+@import "../../../main/var.css";
+
+.menu {
+  background-color: var(--bg-dark);
+  width: var(--aside-width);
+  padding-top: 1rem;
+  float: left;
+  height: calc(100vh - 3rem);
+}
+
+
+.item a {
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.item-title span {
+  font-size: 0.9rem;
+}
+
+.item-title {
+  display: flex;
+  align-items: center;
+}
+
+.item-title .iconToggle{
+  margin-left: auto;
+}
+
+.item i {
+  margin-right: 0.5rem;
+}
+
+.item ul {
+  padding: 0.5rem;
+  padding-left: 2rem;
+  background-color: var(--bg-lightened-dark);
+}
+
+.item ul li {
+  margin-bottom: 7px;
+}

@@ -1,0 +1,42 @@
+@import "../../../main/var.css";
+
+.header {
+  width: 100vw;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-default-light);
+}
+
+.title {
+  width: var(--aside-width);
+  height: 100%;
+  margin-right: 1rem;
+  background-color: var(--bg-default-dark);
+  text-align: center;
+}
+
+.title a {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 3rem;
+} 
+
+.title b {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.title i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar {
+  color: #fff;
+  line-height: 3rem;
+}
+
+.navbar i {
+  cursor: pointer;
+}
