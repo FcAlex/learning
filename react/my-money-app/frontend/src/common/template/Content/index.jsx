@@ -1,7 +1,7 @@
 
 const Content = props => {
   return (
-    <section>
+    <section className="content">
       {props.children}
     </section>
   )

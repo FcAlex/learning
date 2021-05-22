@@ -1,7 +1,29 @@
+import ContentHeader from './../common/template/Content/ContentHeader'
+import Content from '../common/template/Content'
+import Tabs from '../common/template/Content'
+import TabsHeader from '../common/tab/TabsHeader'
+import TabsContent from '../common/tab/TabsContent'
+import TabHeader from '../common/tab/TabHeader'
 
-const BillingCycle = props => {
+const BillingCycle = _ => {
   return (
-    <h1>Ciclo de Pagamento</h1>
+    <div>
+      <ContentHeader title="Ciclos de Pagamentos" subtitle="Cadastro" />
+      <Content>
+        <Tabs>
+          <TabsHeader>
+            <TabHeader label="Listar" icon="bars" target="tabList" />
+            <TabHeader label="Incluir" icon="plus" target="tabCreate" />
+            <TabHeader label="Alterar" icon="pencil" target="tabUpdate" />
+            <TabHeader label="Excluir" icon="trash-o" target="tabDelete" />
+          </TabsHeader>
+
+          <TabsContent>
+            
+          </TabsContent>
+        </Tabs>
+      </Content>
+    </div>
   )
 }
 

@@ -1,8 +1,19 @@
 :root {
   --bg-default-dark: #2980b9;
   --bg-default-light: #3498db;
+
   --bg-dark: #34495e;
   --bg-lightened-dark: #6C7E8F; 
+
+  --bg-green: #2DAF4A;
+  --bg-darkened-green: #05791F;
+
+  --bg-red: #e74c3c;
+  --bg-darkened-red: #A01607;
+
+  --bg-blue: #277E8E;
+  --bg-darkened-blue: #065462;
+
   --aside-width: 17%;
   --main-width: calc(100% - var(--aside-width));
 }

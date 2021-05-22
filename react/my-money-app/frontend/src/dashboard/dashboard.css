@@ -1,0 +1,16 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.content .valueBox {
+  flex-basis: 32%;
+}

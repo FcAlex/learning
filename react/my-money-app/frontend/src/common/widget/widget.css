@@ -1,0 +1,26 @@
+@import "./../../main/var.css";
+
+.valueBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+}
+
+.valueBox .inner {
+  color: #fff;
+}
+
+.valueBox .inner h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+} 
+
+.valueBox .icon i {
+  font-size: 4rem;
+}
+
+.bg-green .icon i {color: var(--bg-darkened-green);}
+.bg-red .icon i {color: var(--bg-darkened-red);}
+.bg-blue .icon i {color: var(--bg-darkened-blue);}
