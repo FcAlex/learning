@@ -12,3 +12,11 @@
 .contentHeader {
   padding: 1rem;
 }
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}

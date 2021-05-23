@@ -7,9 +7,9 @@ import { HashRouter } from 'react-router-dom'
 const Routes = props => {
   return (
     <HashRouter>
-      <Route path='/' component={Dashboard}/>
-      <Route path='/billingCycles' component={BillingCycle} />
-      <Redirect from='*' to="/" />
+        <Route exact path='/' component={Dashboard}/>
+        <Route path='/billingCycles' component={BillingCycle} />
+        <Redirect from='*' to="/" />
     </HashRouter>
   )
 }

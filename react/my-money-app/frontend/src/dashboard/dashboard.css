@@ -4,13 +4,7 @@
   grid-template-rows: auto auto;
 }
 
-.content {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .content .valueBox {
   flex-basis: 32%;
+  border-radius: 3px;
 }

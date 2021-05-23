@@ -5,9 +5,11 @@ import TabsHeader from '../common/tab/TabsHeader'
 import TabsContent from '../common/tab/TabsContent'
 import TabHeader from '../common/tab/TabHeader'
 
+import './billingCycle.css'
+
 const BillingCycle = _ => {
   return (
-    <div>
+    <div className="billingCycle">
       <ContentHeader title="Ciclos de Pagamentos" subtitle="Cadastro" />
       <Content>
         <Tabs>
