@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: var(--ligth);
+}
+
 .mainSection {
   height: calc(100vh - 6rem);
 }

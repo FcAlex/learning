@@ -1,7 +1,8 @@
+import './tab.css'
 
 const Tabs = props => {
   return (
-    <div>
+    <div className="tabs">
       {props.children}
     </div>
   )

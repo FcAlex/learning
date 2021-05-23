@@ -1,3 +1,4 @@
+import './tab.css'
 
 const TabsContent = props => {
   return (

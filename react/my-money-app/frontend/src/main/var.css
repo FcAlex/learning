@@ -2,6 +2,8 @@
   --bg-default-dark: #2980b9;
   --bg-default-light: #3498db;
 
+  --ligth: #ecf0f1;
+
   --bg-dark: #34495e;
   --bg-lightened-dark: #6C7E8F; 
 
@@ -16,4 +18,5 @@
 
   --aside-width: 17%;
   --main-width: calc(100% - var(--aside-width));
+
 }

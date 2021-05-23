@@ -1,6 +1,6 @@
 import ContentHeader from './../common/template/Content/ContentHeader'
 import Content from '../common/template/Content'
-import Tabs from '../common/template/Content'
+import Tabs from '../common/tab/Tabs'
 import TabsHeader from '../common/tab/TabsHeader'
 import TabsContent from '../common/tab/TabsContent'
 import TabHeader from '../common/tab/TabHeader'
