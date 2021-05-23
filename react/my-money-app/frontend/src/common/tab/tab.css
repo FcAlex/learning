@@ -3,22 +3,58 @@
 .tabs {
   background-color: #fff;
   width: 100%;
-  padding: 0.7rem;
 }
 
 .navTabs {
   display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  padding-bottom: 6px;
-  border-bottom: 2px solid var(--ligth);
+  align-items: inherit;
+  gap: 1rem;
+  border-bottom: 1.8px solid var(--ligth);
 }
 
-.navTabs li a {
-  color: #000;
+.navTabs li {
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: 1.8px solid #fff;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+.navTabs li span {
   font-size: 0.9rem;
+}
+
+.navTabs li span:hover {
+  color: #555;
+}
+
+.tabActive {
+  border: 1.8px solid var(--ligth) !important;
+  border-top: 3px solid var(--bg-default-dark) !important;
+  border-bottom: none !important;
+  position: relative;
+}
+
+.tabActive::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
 }
 
 .tab-content {
   padding: 1rem;
+}
+
+.tabContentNone {
+  display: none;
+}
+
+.tabContentActive {
+  display: block;
 }
