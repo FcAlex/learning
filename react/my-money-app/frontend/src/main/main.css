@@ -22,18 +22,39 @@ body {
   background-color: var(--ligth);
 }
 
+.btn {
+  background-color: var(--bg-default-light);
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
 .mainSection {
   height: calc(100vh - 6rem);
 }
 
 .bg-green {
-  background-color: var(--bg-green);
+  background-color: var(--bg-green) !important;
 }
 
 .bg-red {
-  background-color: var(--bg-red);
+  background-color: var(--bg-red) !important;
 }
 
 .bg-blue {
-  background-color: var(--bg-blue);
+  background-color: var(--bg-blue) !important;
+}
+
+.bg-gray {
+  background-color: var(--bg-lightened-dark) !important;
+}
+
+.bg-yellow {
+  background-color: var(--bg-yellow) !important;
 }

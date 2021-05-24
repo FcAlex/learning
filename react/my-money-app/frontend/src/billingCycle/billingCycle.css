@@ -35,13 +35,6 @@
   margin-top: 1.5rem
 }
 
-.form-footer button {
-  padding: 0.4rem 1rem;
-  border: none;
-  background-color: var(--bg-default-light);
-  cursor: pointer;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 0.9rem;
-  text-transform: uppercase;
+.form-footer .btn {
+  margin: 3px;
 }

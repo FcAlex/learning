@@ -50,7 +50,7 @@
 
 .tab-content {
   padding: 1rem;
-  height: 24rem;
+  max-height: 24rem;
   overflow-y: scroll;
 }
 

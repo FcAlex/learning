@@ -1,8 +1,11 @@
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import { reduxForm, Field} from 'redux-form'
 import LabelAndInput from '../common/form/LabelAndInput'
 import './billingCycle.css'
+import { init } from './billingCycleActions'
 
-const BillingCycleForm = props => {
+function BillingCycleForm(props) {
   const { handleSubmit } = props
 
   return (
@@ -14,9 +17,12 @@ const BillingCycleForm = props => {
       </div>
       <div className="form-footer">
         <button type="submit" className="btn">Submit</button>
+        <button type="button" className="btn bg-gray" onClick={props.init}>Cancelar</button>
       </div>
     </form>
   )
 }
 
-export default reduxForm({ form: 'billingCycleForm'})(BillingCycleForm)
+const form = { form: 'billingCycleForm', destroyOnUnmount: false }
+const mapDispatchToProps = dispatch => bindActionCreators({ init }, dispatch)
+export default connect(null, mapDispatchToProps)(reduxForm(form)(BillingCycleForm))

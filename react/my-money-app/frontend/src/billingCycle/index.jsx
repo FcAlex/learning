@@ -46,7 +46,7 @@ const BillingCycle = props => {
             </TabContent>
             
             <TabContent id="tabUpdate">
-              <h1>Alterar</h1>
+              <BillingCycleForm />
             </TabContent>
 
             <TabContent id="tabDelete">
