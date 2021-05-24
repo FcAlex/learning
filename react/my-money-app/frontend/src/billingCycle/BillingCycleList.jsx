@@ -19,7 +19,7 @@ const BillingCycleList = props => {
         <td>{bc.month}</td>
         <td>{bc.year}</td>
         <td>
-          <button className="btn bg-yellow" onClick={() => props.showUpdate(bc)}>
+          <button className="btn bg-orange" onClick={() => props.showUpdate(bc)}>
             <i className="fa fa-pencil"></i>
           </button>
         </td>

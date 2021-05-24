@@ -58,3 +58,7 @@ body {
 .bg-yellow {
   background-color: var(--bg-yellow) !important;
 }
+
+.bg-orange {
+  background-color: var(--bg-orange) !important;
+}
