@@ -1,3 +1,47 @@
+@import "../main/var.css";
+
 .billingCycle {
   display: grid;
+}
+
+.billingCycleList .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.billingCycleList .table tr {
+  border-bottom: 1.5px solid var(--light);
+}
+
+.billingCycleList .table th, .billingCycleList .table td {
+  padding: 0.8rem 0;
+}
+
+.billingCycleList .table th {
+  font-weight: 500;
+  text-align: left;
+}
+
+.fields {
+  display: flex;
+  gap: 5rem;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-footer {
+  margin-top: 1.5rem
+}
+
+.form-footer button {
+  padding: 0.4rem 1rem;
+  border: none;
+  background-color: var(--bg-default-light);
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }

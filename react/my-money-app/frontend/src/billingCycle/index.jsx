@@ -5,12 +5,15 @@ import Tabs from '../common/tab/Tabs'
 import TabsHeader from '../common/tab/TabsHeader'
 import TabsContent from '../common/tab/TabsContent'
 import TabContent from '../common/tab/TabContent'
+import { selectTab, showTabs } from '../common/tab/tabsActions'
 import TabHeader from '../common/tab/TabHeader'
+import BillingCycleList from './BillingCycleList'
+import { create } from './billingCycleActions'
 
 import './billingCycle.css'
 import { connect } from 'react-redux'
-import { selectTab, showTabs } from '../common/tab/tabsActions'
 import { useEffect } from 'react'
+import BillingCycleForm from './BillingCycleForm'
 
 const BillingCycle = props => {
 
@@ -35,11 +38,11 @@ const BillingCycle = props => {
 
           <TabsContent>
             <TabContent id="tabList">
-              <h1>Lista</h1>
+              <BillingCycleList />
             </TabContent>
             
             <TabContent id="tabCreate">
-              <h1>Incluir</h1>
+              <BillingCycleForm onSubmit={props.create}/>
             </TabContent>
             
             <TabContent id="tabUpdate">
@@ -56,5 +59,5 @@ const BillingCycle = props => {
   )
 }
 
-const mapDispatchToProps = dispatch => bindActionCreators({ selectTab, showTabs }, dispatch)
+const mapDispatchToProps = dispatch => bindActionCreators({ selectTab, showTabs, create }, dispatch)
 export default connect(null, mapDispatchToProps)(BillingCycle)

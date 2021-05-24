@@ -3,6 +3,7 @@ import Footer from '../common/template/Footer'
 import Header from '../common/template/Header/'
 import Sidebar from '../common/template/Menu/Sidebar'
 import Routes from './routes'
+import Messages from '../common/msg/Messages'
 
 import './main.css'
 
@@ -15,6 +16,7 @@ const App = (_) => {
         <Routes />
       </section>
       <Footer />
+      <Messages />
     </div>
   )
 }

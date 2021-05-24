@@ -3,13 +3,14 @@
 .tabs {
   background-color: #fff;
   width: 100%;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navTabs {
   display: flex;
   align-items: inherit;
   gap: 1rem;
-  border-bottom: 1.8px solid var(--ligth);
+  border-bottom: 1.8px solid var(--light);
 }
 
 .navTabs li {
@@ -31,7 +32,7 @@
 }
 
 .tabActive {
-  border: 1.8px solid var(--ligth) !important;
+  border: 1.8px solid var(--light) !important;
   border-top: 3px solid var(--bg-default-dark) !important;
   border-bottom: none !important;
   position: relative;
@@ -49,6 +50,8 @@
 
 .tab-content {
   padding: 1rem;
+  height: 24rem;
+  overflow-y: scroll;
 }
 
 .tabContentNone {

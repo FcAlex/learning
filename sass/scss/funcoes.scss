@@ -2,7 +2,7 @@ $color: red;
 $amount: 80%;
 
 div {
-    background: ligthen($color, $amount); //clarear a cor de acordo com a porcentagem
+    background: lighten($color, $amount); //clarear a cor de acordo com a porcentagem
     background: darken($color, $amount); //escurecer a cor de acordo com a porcentagem
     font-family: quote(Fira Code); // adiciona as aspas na string
     font-family: unquote("Fira Code"); // remove as aspas da String

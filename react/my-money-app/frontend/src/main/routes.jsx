@@ -9,7 +9,7 @@ const Routes = props => {
     <HashRouter>
         <Route exact path='/' component={Dashboard}/>
         <Route path='/billingCycles' component={BillingCycle} />
-        <Redirect from='*' to="/" />
+        <Redirect from='*' to={{pathname: '/', hash:'#'}} />
     </HashRouter>
   )
 }
