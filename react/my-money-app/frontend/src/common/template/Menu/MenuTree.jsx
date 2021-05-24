@@ -11,12 +11,11 @@ const MenuTree = props => {
 
   return (
     <li className="item tree">
-      {/* eslint-disable-next-line */}
-      <a href="#" className="item-title" onClick={toggleSubMenu}>
+      <span className="item-title" onClick={toggleSubMenu}>
         <i className={`fa fa-${props.icon}`}></i> 
         <span>{props.label}</span>
         <i className={`fa fa-angle-${direction} iconToggle`}></i>
-      </a>
+      </span>
 
       {toggleMenu ? <ul>{props.children}</ul> : ''}
     </li>    

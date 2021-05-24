@@ -9,19 +9,18 @@
 }
 
 
-.item a {
+.item span, .item a {
   font-size: 0.9rem;
   color: #fff;
   padding: 0.5rem;
-}
-
-.item-title span {
-  font-size: 0.9rem;
+  user-select: none;
 }
 
 .item-title {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  color: #fff;
 }
 
 .item-title .iconToggle{
