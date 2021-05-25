@@ -1,5 +1,5 @@
 ## Itens por fazer
 
-- [ ] Adicionar estilo na tabela de itens (tabela e inputs)  
-- [ ] Adicionar estilo no Summary  
+- [x] Adicionar estilo na tabela de itens (tabela e inputs)  
+- [x] Adicionar estilo no Summary  
 - [ ] Adicionar Responsividade  

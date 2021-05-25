@@ -7,7 +7,6 @@ import './billingCycle.css'
 import { init } from './billingCycleActions'
 import ItemList from './ItemList'
 import Summary from './Summary'
-import Content from '../common/template/Content'
 
 function BillingCycleForm(props) {
   const { handleSubmit, readOnly, credits, debits } = props
@@ -33,12 +32,10 @@ function BillingCycleForm(props) {
         <Field name="month" component={LabelAndInput} type="number" label="Mês" placeholder="Informe o mês" readOnly={readOnly} />
         <Field name="year" component={LabelAndInput} type="number" label="Ano" placeholder="Informe o ano" readOnly={readOnly} />
       </div>
-      <Content>
-        <Summary credit={sumOfCredits} debit={sumOfDebits}/>
-      </Content>
-      <div>
-        <ItemList readOnly={readOnly} list={credits} field="credits" legend="Créditos"/>
-        <ItemList readOnly={readOnly} list={debits} field="debits" legend="Débitos" showStatus={true} />
+      <Summary credit={sumOfCredits} debit={sumOfDebits}/>
+      <div className="billingCycleItems">
+        <ItemList readOnly={readOnly} list={credits} field="credits" caption="Créditos"/>
+        <ItemList readOnly={readOnly} list={debits} field="debits" caption="Débitos" showStatus={true} />
       </div>
       <div className="form-footer">
         <Button bg={props.submitColor} type="submit">{props.submitLabel}</Button>

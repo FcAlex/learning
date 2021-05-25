@@ -4,6 +4,7 @@ import ButtonIcon from "../common/button/ButtonIcon"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
 import If from "../common/helpers/If"
+import Select from "../common/form/Select"
 
 const ItemList = props => {
 
@@ -34,8 +35,10 @@ const ItemList = props => {
         </td>
         <If test={props.showStatus}>
           <td>
-            <Field name={`${props.field}[${index}].status`} component={Input}
-              placeholder="informe o Status" readOnly={props.readOnly} />
+            <Field component={Select} readOnly={props.readOnly} 
+              list={['PAGO', 'PENDENTE', 'AGENDADO']} name={`${props.field}[${index}].status`}/>
+            {/* <Field  component={Input}
+              placeholder="informe o Status" readOnly={props.readOnly} /> */}
           </td>
         </If>
         <td>
@@ -48,27 +51,23 @@ const ItemList = props => {
   }
 
   return (
-    <div>
-      <fieldset>
-        <legend>{props.legend}</legend>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Nome</th>
-              <th>Valor</th>
-              <If test={props.showStatus}>
-                <th>Status</th>
-              </If>
-              <th>Ações</th>
-            </tr>
-          </thead>
+    <table className="table-items">
+      <caption className="billingCycleItemTitle">{props.caption}</caption>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Valor</th>
+          <If test={props.showStatus}>
+            <th>Status</th>
+          </If>
+          <th>Ações</th>
+        </tr>
+      </thead>
 
-          <tbody>
-            {renderRows()}
-          </tbody>
-        </table>
-      </fieldset>
-    </div>
+      <tbody>
+        {renderRows()}
+      </tbody>
+    </table>
   )
 }
 

@@ -1,11 +1,11 @@
 const Input = props => {
   return (
-    <input {...props.input} 
-      className=''
-      placeholder={props.placeholder}
-      readOnly={props.readOnly}
-      type={props.type}/>
-
+    <div className='form-group'>
+      <input {...props.input}
+        placeholder={props.placeholder}
+        readOnly={props.readOnly}
+        type={props.type} />
+    </div>
   )
 }
 

@@ -35,11 +35,6 @@
   margin-top: 1.5rem
 }
 
-input:disabled {
-  background-color: var(--bg-lightened-dark) !important;
-
-}
-
 .list-row {
   display: flex;
   justify-content: space-between;
@@ -51,4 +46,48 @@ input:disabled {
 
 .list-row td:first-child, .list-row th:first-child {
   flex: 3;
+}
+
+.content div {
+  width: 100%;
+}
+
+.content {
+  padding: 10px;
+}
+
+.billingCycleItems {
+  display: flex;
+  gap: 1rem;
+}
+
+.table-items {
+  border-collapse: collapse;
+}
+
+.table-items tr {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table-items td, .table-items th {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.table-items th {
+  border-bottom: 1px solid var(--light);
+}
+
+.summary {
+  margin: 1rem 0;
+}
+
+.billingCycleItemTitle {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1.5px solid #ccc;
 }

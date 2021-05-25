@@ -2,7 +2,6 @@
 
 .valueBox {
   display: flex;
-  justify-content: space-between;
   padding: 0.5rem;
   align-items: center;
 }
@@ -17,8 +16,12 @@
   margin-bottom: 0.8rem;
 } 
 
+.valueBox .icon {
+  text-align: right;
+}
+
 .valueBox .icon i {
-  font-size: 4rem;
+  font-size: 4.2rem;
 }
 
 .bg-green .icon i {color: var(--bg-darkened-green);}
