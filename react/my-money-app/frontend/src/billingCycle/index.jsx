@@ -5,10 +5,9 @@ import Tabs from '../common/tab/Tabs'
 import TabsHeader from '../common/tab/TabsHeader'
 import TabsContent from '../common/tab/TabsContent'
 import TabContent from '../common/tab/TabContent'
-import { selectTab, showTabs } from '../common/tab/tabsActions'
 import TabHeader from '../common/tab/TabHeader'
 import BillingCycleList from './BillingCycleList'
-import { create, update } from './billingCycleActions'
+import { create, update, remove, init } from './billingCycleActions'
 
 import './billingCycle.css'
 import { connect } from 'react-redux'
@@ -17,12 +16,11 @@ import BillingCycleForm from './BillingCycleForm'
 
 const BillingCycle = props => {
 
-  const { selectTab, showTabs }  = props
+  const { init }  = props
 
   useEffect(() => {
-    selectTab('tabList')
-    showTabs('tabList', 'tabCreate')
-  }, [selectTab, showTabs])
+    init()
+  }, [init])
 
   return (
     <div className="billingCycle">
@@ -42,15 +40,15 @@ const BillingCycle = props => {
             </TabContent>
             
             <TabContent id="tabCreate">
-              <BillingCycleForm onSubmit={props.create}/>
+              <BillingCycleForm onSubmit={props.create} submitLabel="Incluir" submitColor="green"/>
             </TabContent>
             
             <TabContent id="tabUpdate">
-              <BillingCycleForm onSubmit={props.update} />
+              <BillingCycleForm onSubmit={props.update} submitLabel="Alterar" submitColor="blue"/>
             </TabContent>
 
             <TabContent id="tabDelete">
-              <h1>Excluir</h1>
+              <BillingCycleForm onSubmit={props.remove} readOnly={true} submitLabel="Remover" submitColor="red" />
             </TabContent>
           </TabsContent>
         </Tabs>
@@ -60,6 +58,6 @@ const BillingCycle = props => {
 }
 
 const mapDispatchToProps = dispatch => 
-  bindActionCreators({ selectTab, showTabs, create, update }, dispatch)
-  
+  bindActionCreators({ create, update, remove, init }, dispatch)
+
 export default connect(null, mapDispatchToProps)(BillingCycle)

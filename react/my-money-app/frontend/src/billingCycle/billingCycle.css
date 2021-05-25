@@ -35,6 +35,20 @@
   margin-top: 1.5rem
 }
 
-.form-footer .btn {
-  margin: 3px;
+input:disabled {
+  background-color: var(--bg-lightened-dark) !important;
+
+}
+
+.list-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-row td, .list-row th {
+  flex: 1;
+}
+
+.list-row td:first-child, .list-row th:first-child {
+  flex: 3;
 }

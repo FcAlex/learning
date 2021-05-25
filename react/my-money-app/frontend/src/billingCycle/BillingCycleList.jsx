@@ -1,27 +1,27 @@
 import { useEffect } from "react"
 import { connect } from "react-redux"
 import { bindActionCreators } from "redux"
-import { getList, showUpdate } from './billingCycleActions'
+import ButtonIcon from "../common/button/ButtonIcon"
+import { getList, showUpdate, showDelete } from './billingCycleActions'
 
 const BillingCycleList = props => {
 
-  const { getList, list } = props
+  const { getList } = props
 
   useEffect(() => {
     getList()
-  }, [getList, list]) 
+  }, [getList]) 
 
   function renderRows() {
     const list = props.list || []
     return list.map(bc => (
-      <tr key={bc._id}>
+      <tr key={bc._id} className="list-row">
         <td>{bc.name}</td>
         <td>{bc.month}</td>
         <td>{bc.year}</td>
         <td>
-          <button className="btn bg-orange" onClick={() => props.showUpdate(bc)}>
-            <i className="fa fa-pencil"></i>
-          </button>
+          <ButtonIcon icon="pencil" bg="orange" onClick={() =>props.showUpdate(bc)} />
+          <ButtonIcon icon="trash-o" bg="red" onClick={() =>props.showDelete(bc)} />
         </td>
       </tr>
     ))
@@ -31,7 +31,7 @@ const BillingCycleList = props => {
     <div className="billingCycleList">
       <table className="table">
         <thead>
-          <tr>
+          <tr className="list-row">
             <th>Nome</th>
             <th>Mês</th>
             <th>Ano</th>
@@ -48,5 +48,7 @@ const BillingCycleList = props => {
 }
 
 const mapStateToProps = state => ({list: state.billingCycle.list})
-const mapDispatchToProps = dispatch => bindActionCreators({ getList, showUpdate }, dispatch)
+const mapDispatchToProps = dispatch => 
+  bindActionCreators({ getList, showUpdate, showDelete }, dispatch)
+
 export default connect(mapStateToProps, mapDispatchToProps)(BillingCycleList)
