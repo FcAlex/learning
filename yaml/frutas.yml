@@ -1,0 +1,32 @@
+
+# chave: valor
+fruta: banana #string (pode ser com aspas duplas ou simples)
+qtde_frutas: 5 #number
+gosta_de_fruta: true #boolean
+date: 2020-09-29 #date
+
+--- #considera como um novo arquivo
+
+frutas: # objeto
+  - nome: banana #lista
+    cor: amarela
+    qtde: 5
+  - nome: morango
+    cor: vermelho
+    qtde: 10
+  - nome: limao
+    cor: verde
+    qtde: 20
+
+texto: | #multine (o texto resultante possui quebra de linha)
+  Hello
+  World
+  my
+  friend
+
+texto2: > #multine (o texto resultante não possui quebra de linha, cada linha é separado por espaço)
+  Hello
+  World
+  my
+  friend
+

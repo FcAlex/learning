@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Giropops
+  labels:
+    app: Strigus
+spec:
+  container:
+    - name: ngix2
+      image: nginx
+      ports:
+        - containerPort: 80
+    - name: mongo
+      image: mongo
+      ports:
+        - containerPort: 8080
