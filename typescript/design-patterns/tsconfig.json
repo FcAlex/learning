@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2019", // define a versão do arquivo gerado em js
+    "module": "CommonJS", // define se utiliza o padrão de modulos
+    "lib": ["ESNext", "DOM"], // define as libs
+    "outDir": "./dist", // pasta onde salva os arquivos compilados
+    "rootDir": "./src", // raiz do projeto
+    "removeComments": true, // remover comentários
+    "noEmitOnError": true, 
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true, // pular checagem de libs
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "./src"
+  ]
+}
