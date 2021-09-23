@@ -1,5 +1,10 @@
 # Design Pattern
 
+Apresenta os principais design patterns para o desenvolvimento de software.
+
+> Design pattern é uma solução geral para um problema que ocorre com frequência dentro de um determinado contexto no projeto de software. Um padrão de projeto não é um projeto finalizado que pode ser diretamente transformado em código fonte ou de máquina, ele é uma descrição ou modelo (template) de como resolver um problema que pode ser usado em muitas situações diferentes.
+> - Wikipedia
+
 [Link do Curso](https://www.youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H)
 
 # Sumário
