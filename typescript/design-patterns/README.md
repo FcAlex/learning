@@ -1,7 +1,33 @@
+# Design Pattern
+
+[Link do Curso](https://www.youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H)
+
 # Sumário
 - [Criacionais](#criacionais)
+    - [Singleton](#singleton)
+    - [Builder](#builder)
+    - [Prototype](#prototype)
+    - [Factory Method](#factory-method)
+    - [Abstract Factory](#abstract-factory)
 - [Estruturais](#estruturais)
-- [Criacionais](#criacionais)
+    - [Composite](#composite)
+    - [Adapter](#adapter)
+    - [Bridge](#bridge)
+    - [Decorator](#decorator)
+    - [Façade](#façade)
+    - [Flyweight](#flyweight)
+- [Comportamentais](#comportamentais)
+    - [Strategy](#strategy)
+    - [Command](#command)
+    - [Memento](#memento)
+    - [State](#state)
+    - [Mediator](#mediator)
+    - [Flyweight](#flyweight)
+    - [Chain of responsibility](#chain-of-responsibility)
+    - [Template](#template)
+    - [Observer](#observer)
+    - [Iterator](#iterator)
+    - [Visitor](#visitor)
 
 # Padrões de Projeto
 
@@ -9,6 +35,8 @@
 
 - Os padrões de projeto de criação são padrões que abstraem o processo de instanciação de objetos. Eles ajudam a tornar um sistema independente de como seus objetos são representados, criados e compostos. Geralmente, atingem este objetivo delegando tarefas para outros objetos.
 - Esses padrões dão muita flexibilidade ao sistema, porque encapsulam o conhecimento sobre quais classes concretas são usadas. Além disso, ocultam o modo como as instâncias são criadas e compostas. O foco é eliminar conhecimento do cliente sobre o *QUE*, *COMO* e *QUANDO* está sendo criado e *QUEM* faz parte do processo de criação.
+
+[Voltar ao início](#design-pattern)
 
 ## Singleton
 
@@ -23,6 +51,8 @@
 - Uma vantagem do Singleton é que podemos proteger a instância com encapsulamento.
 - Use o singleton quando uma classe precisa ter somente uma instância disponível em todo o seu programa
 - Use o singleton quando perceber que está usando variáveis globais para manter partes importantes do programa, como variáveis de configuração que são usadas por toda o programa
+
+[Voltar ao início](#design-pattern)
 
 ## Builder
 
@@ -42,6 +72,8 @@
 - O objeto final pode variar de acordo com a necessidade
 - É um padrão complexo
 
+[Voltar ao início](#design-pattern)
+
 ## Prototype
 
 ### Intenção
@@ -58,6 +90,8 @@
 - O método clone pode gerar uma "*shallow*" ou "*deep*" *copy* do objeto protótipo
 - Evita que o cliente conheça as classes que criam os objetos
 - Use o padrão prototype quando precisa que seu código não dependa de classes
+
+[Voltar ao início](#design-pattern)
 
 ## Factory Method
 
@@ -79,6 +113,8 @@
 - Ajuda na aplicação do Single Responsibility Principle. Separa o código que cria do código que usa o objeto
 - Ajuda no desacoplamento do seu código
 
+[Voltar ao início](#design-pattern)
+
 ## Abstract Factory
 
 ### Intenção
@@ -99,9 +135,13 @@
     - você quer fornecer uma biblioteca de classes de produtos e quer revelar somente suas interfaces, não suas implementações
 - Os produtos sempre serão compatíveis entre si.
 
+[Voltar ao início](#design-pattern)
+
 # Estruturais
 
 - Se preocupam com a forma como os objetos são compostos para formar estruturas complexas.
+
+[Voltar ao início](#design-pattern)
 
 ## Composite
 
@@ -119,6 +159,8 @@
     - suas estruturas de objetos possa ser representada hierarquicamente, como por exemplo, estruturas do tipo árvore
     - você quiser que o código cliente trate objetos compostos e objetos simples da mesma maneira
 - Com ele, é muito fácil criar objetos complexos por composição, gerar uma hierarquia de objetos, usar polimorfismo e recursão e adicionar novos tipos de elementos na estruturas (OCP)
+
+[Voltar ao início](#design-pattern)
 
 ## Adapter
 
@@ -138,6 +180,8 @@
 - Desacopla o código da aplicação de códigos de terceiros
 - Aplica o SRP ao separar a conversão de interfaces da lógica da aplicação
 - Aplica o OCP ao permitir introduzir novos Adapters para código existente
+
+[Voltar ao início](#design-pattern)
 
 ## Bridge
 
@@ -160,6 +204,8 @@
 - Implementa o OCP ao permitir novas abstrações e/ou implementações para código
 - Tem as mesmas vantagens do Adapter
 
+[Voltar ao início](#design-pattern)
+
 ## Decorator
 
 ### Intenção
@@ -181,6 +227,8 @@
 - É fácil adicionar ou remover comportamento de objetos sem tocar em código já escrito ou testado (OCP)
 - É possível decorar um objeto já adicionando ainda mais funcionalidades (camadas)
 
+[Voltar ao início](#design-pattern)
+
 ## Façade
 
 ### Intenção
@@ -197,6 +245,8 @@
 - Isola o código complexo do código cliente
 - Facilita o uso do sistema
 - Cria pontos de entrada para camadas da aplicação e serviços de terceiros
+
+[Voltar ao início](#design-pattern)
 
 ## Proxy
 
@@ -221,6 +271,8 @@
 - O Proxy funciona mesmo se o objeto real não estiver operacional ou pronto para uso
 - Você pode controlar o ciclo de vida de objetos reais dentro do proxy
 
+[Voltar ao início](#design-pattern)
+
 ## Flyweight
 
 ### Intenção
@@ -242,13 +294,13 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
     - muitos objetos podem ser substituídos por poucos objetos compartilhados
     - a aplicação não depende da identidade dos objetos
 
+[Voltar ao início](#design-pattern)
+
 # Comportamentais
 
 - Os padrões de projeto comportamentais se preocupam com os algoritmos e a atribuição de responsabilidades entre objetos. Os padrões comportamentais não descrevem apenas padrões de objetos ou classes, mas também os padrões de comunicação entre eles. Esses padrões caracterizam fluxos de controle difíceis de seguir em tempo de execução. Eles afastam o foco do fluxo de controle para permitir que você se concentre somente na maneira como os objetos são interconectados.
 
-## Strategy
-
-- Os padrões de projeto comportamentais se preocupam com algoritmos, a distribuição de responsabilidade entre objetos e os padrões de comunicação entre eles
+[Voltar ao início](#design-pattern)
 
 ## Strategy
 
@@ -268,6 +320,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
     - você perceber que está usando condicionais apenas para trocar o resultado final de um algoritmo
 - Troca herança por composição
 - Aplica os princípios do aberto/fechado e da responsabilidade única
+
+[Voltar ao início](#design-pattern)
 
 ## Command
 
@@ -289,6 +343,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
     - você quer tratar um comando como um objeto (com a possibilidade de armazenar, agendar, enfileirar, fazer log, agendar execuções, ou fazer qualquer coisa que pode ser feita com um objeto)
     - você quer permitir que solicitações possam ser feitas e desfeitas
 
+[Voltar ao início](#design-pattern)
+
 ## Memento
 
 ### Intenção
@@ -304,6 +360,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
     - você quer ter a possibilidade de salvar e restaurar o estado atual de um objeto sem violar o encapsulamento
     - você deseja implementar a função "desfazer" no seu sistema
     - você deseja fazer backups de estado de determinadas classes no seu sistema
+
+[Voltar ao início](#design-pattern)
 
 ## State
 
@@ -323,6 +381,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
 - Permite a criação de novos estados apenas adicionando novas classes
 - Elimina condicionais complexas da classe de contexto
 
+[Voltar ao início](#design-pattern)
+
 ## Mediator
 
 ### Intenção
@@ -340,6 +400,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
 - facilita a reutilização de objetos
 - facilita a adição de novos mediadores e classes participantes na comunicação
 - encapsula a comunicação entre objetos
+
+[Voltar ao início](#design-pattern)
 
 ## Chain of responsibility
 
@@ -366,6 +428,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
     - Aplica o princípio do aberto e fechado (OCP)
     - Permite que você altere a cadeia de objetos e a ordem das chamadas facilmente
 
+[Voltar ao início](#design-pattern)
+
 ## Template
 
 ### Intenção
@@ -386,6 +450,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
 - Permite fácil alteração de algoritmo
 - Aplica o OCP e SRP
 
+[Voltar ao início](#desin-pattern)
+
 ## Observer
 
 ### Intenção
@@ -400,6 +466,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
 - Use o observer quando você precisa notificar vários objetos sobre a mudança de estado de outro(s) objeto(s)
 - Usa o SRP e OCP
 - Facilita a comunicação entre objetos em tempo de execução
+
+[Voltar ao início](#design-pattern)
 
 ## Iterator
 
@@ -423,6 +491,8 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
 - É fácil adicionar novos objetos iteradores com algoritmos de travessia completamente diferentes
 - Não polui o código do objeto principal com vários métodos e algoritmos de travessia diferentes
 
+[Voltar ao início](#design-pattern)
+
 ## Visitor
 
 ### Intenção
@@ -437,3 +507,5 @@ Flyweight é um padrão de projeto estrutural que tem a intenção de usar compa
 - Limpa o código da regra de negócio
 - Separa algoritmos complexos em objetos auxiliares
 - Aplica SRP e OCP
+
+[Voltar ao início](#design-pattern)
