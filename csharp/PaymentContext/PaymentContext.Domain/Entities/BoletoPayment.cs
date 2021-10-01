@@ -1,11 +1,12 @@
 using System;
+using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Domain.Entities
 {
   public class BoletoPayment : Payment
   {
 
-    public BoletoPayment(string boletoNumber, string barCode, string email, DateTime paidDate, DateTime expireDate, decimal total, string owner, decimal totalPaid, string address) : base(paidDate, expireDate, total, owner, totalPaid, address)
+    public BoletoPayment(string boletoNumber, string barCode, Email email, DateTime paidDate, DateTime expireDate, decimal total, string owner, decimal totalPaid, Address address, Document document) : base(paidDate, expireDate, total, owner, totalPaid, address, document)
     {
       BoletoNumber = boletoNumber;
       BarCode = barCode;
@@ -14,6 +15,6 @@ namespace PaymentContext.Domain.Entities
 
     public string BoletoNumber { get; private set; }
     public string BarCode { get; private set; }
-    public string Email { get; private set; }
+    public Email Email { get; private set; }
   }
 }
